@@ -1,0 +1,36 @@
+<div class="container border my-2">
+    <div class="my-2">
+      <label class="form-label"> Number 1: </label>
+      <input class="form-control" type="number" [(ngModel)]="number_one" />
+    </div>
+    <div class="my-2">
+      <label class="form-label"> Number 2: </label>
+      <input class="form-control" type="number" [(ngModel)]="number_two"/>
+    </div>
+    <div class="my-2">
+      <button class="btn btn-primary" (click)="setOperations()">Operar</button>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3">
+      	<p>
+	  Suma: {{ getSum() }}
+	</p>
+      </div>
+      <div class="col-12 col-md-3">
+      	<p>
+	  Resta: {{ getSubtraction() }}
+	</p>
+      </div>
+      <div class="col-12 col-md-3">
+      	<p>
+	  Multiplicación: {{ getMultiplication() }}
+	</p>
+      </div>
+
+      <div class="col-12 col-md-3">
+      	<p>
+	  División: {{ getDivition() }}
+	</p>
+      </div>
+    </div>
+</div>
